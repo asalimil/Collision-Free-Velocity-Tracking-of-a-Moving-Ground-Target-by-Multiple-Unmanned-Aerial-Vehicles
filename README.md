@@ -1,1 +1,9 @@
 # Collision-Free-Velocity-Tracking-of-a-Moving-Ground-Target-by-Multiple-Unmanned-Aerial-Vehicles
+This repository contains Python codes for implementation of the controller for Crazyflie drones proposed in the following paper:
+
+@article{lafmejanicollision,
+  title={Collision-Free Velocity Tracking of a Moving Ground Target by Multiple Unmanned Aerial Vehicles⋆},
+  author={Lafmejani, Amir Salimi and Farivarnejad, Hamed and Rezayat, Mostafa and Sorkhabadi, Fatemeh Zahedi and Doroudchi, Azadeh and Berman, Spring}
+}
+
+In this project, we present a controller for collision-free velocity tracking of a moving ground target by multiple unmanned aerial vehicles (UAVs). The controller combines a feedforward proportionalderivative (PD) control term and a term that is based on the gradient of an artificial potential function. We use Lasalle’s invariance principle to analytically prove the convergence of the UAVs to a fixed formation above the target that tracks the target’s velocity and provide mathematical guarantees on the UAVs’ collision avoidance. As a result, the Euclidean distance between each pair of UAVs approaches a constant value at equilibrium. In the event of UAV failure, the remaining UAVs reconfigure to a new fixed formation and maintain collision-free tracking of the target’s velocity, demonstrating the robustness of our control approach to failure. We validate this control approach on different simulated scenarios in MATLAB and the Gazebo robot simulator. We also experimentally test the performance of the control approach on physical robots, using Crazyflie quadrotors as the UAVs and a Turtlebot3 Burger robot as the moving ground target. The simulation and experimental results demonstrate the effectiveness of our control approach at collision-free tracking and its robustness to UAV failure.
